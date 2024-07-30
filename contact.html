@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Veer seva Food Foundation</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="logo_type_imgg-removebg-preview.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" style="color: #1C70B5;">Contact</a></li>
+              <li><a href="donate.html">Donate Now</a></li>
+            </ul>
+    
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- contact page -->
+
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+91-9685098540</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">donatenow03@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span> <a href="#">veersevafoundation.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left-title">
+                 <h2 class="form-title">Send us a message</h2>
+                
+                    <div class="form-fields">
+                        <input type="hidden" name="access_key" value="fac56e91-0a52-41fc-9d7f-e7fc41ee55d1">
+                        <div class="form-group">
+                            
+                            <input type="text" name="Full_Name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" name="Last_name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email_id" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="number" name="Phone_number" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FAQ -->
+
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item" onclick="toggleAnswer(1)">
+        <h3>What is the purpose of this website?</h3>
+        <div class="answer" id="answer1">The primary purpose of Veer Sewa Food Foundation is to alleviate hunger and food insecurity in communities. The foundation is dedicated to providing essential food assistance, support, and resources to individuals and families facing economic hardships. Through various initiatives and programs, Veer Sewa Food Foundation aims to create a positive impact, fostering a community where everyone has access to an adequate and nutritious food supply, promoting overall well-being and resilience.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(2)">
+        <h3>What is the primary focus of Veer Sewa Food Foundation?</h3>
+        <div class="answer" id="answer2">Veer Sewa Food Foundation primarily focuses on providing food assistance and support to individuals and families facing food insecurity.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(3)">
+        <h3>How can individuals contribute to Veer Sewa Food Foundation's mission?</h3>
+        <div class="answer" id="answer3">Individuals can contribute to Veer Sewa Food Foundation by making monetary donations, volunteering their time, or participating in fundraising events organized by the foundation.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(4)">
+        <h3>Where does Veer Seva Food Foundation operate?</h3>
+        <div class="answer" id="answer4">Veer Sewa Food Foundation operates in Madhya Pradesh, striving to address hunger-related issues within these communities.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(5)">
+        <h3>What sets Veer Seva Food Foundation apart from other similar organizations?</h3>
+        <div class="answer" id="answer5">Veer Sewa Food Foundation distinguishes itself through its commitment to not only providing food assistance but also fostering community engagement and empowerment, creating a holistic approach to combating hunger.</div>
+    </div>
+</div>
+  
+
+</div>
+<!-- footer page -->
+
+<footer>
+    <div class="footer-content">
+     
+      <div class="footer-logo">
+        <h1><span class="first-word">VEER</span> <span class="second-word">SEVA</span> <span class="third-word">FOOD</span> <span class="fourth-word">FOUNDATION</span></h1>
+      </div>
+      <div class="footer-links">
+        <ul>
+            <li class="submenu-trigger">
+                <a href="#">ABOUT VEER SEVA FOUNDATION</a>
+                <div class="footer-submenu">
+                    <p>About us</p>
+                    <p>Programs</p>
+                    <p>Blog</p>
+                </div>
+            </li>
+            <li class="submenu-trigger">
+                <a href="#">OUR PEOPLE</a>
+                <div class="footer-submenu">
+                    <p>Our team</p>
+                    <p>Partners</p>
+                </div>
+            </li>
+            <li class="submenu-trigger">
+                <a href="#">GET INVOLVED</a>
+                <div class="footer-submenu">
+                    <p>Donate</p>
+                    <p>Volunteer</p>
+                    <p>Contact us</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+      <div class="footer-social">
+        <h3>Connect with Us</h3>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-scanner">
+      <img src="" alt="Scanner Image">
+      <p>DONATE NOW</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Veer Seva Food Foundation. All rights reserved.</p>
+      <hr>
+    </div>
+  </footer>
+
+    
+    <script src="contact.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+   </body>
+    </html>

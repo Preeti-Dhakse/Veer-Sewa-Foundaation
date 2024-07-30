@@ -1,0 +1,507 @@
+
+ body {
+    margin: 0;
+    font-family: 'Your Professional Font', Arial, sans-serif; 
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 50px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.nav-list a:hover,
+.nav-list a.active,
+.nav-list  a:focus,
+.nav-list  a:active {
+    color: #1C70B5;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color:black;
+    margin: 5px 0;
+}
+video {
+    width: 100%;
+    height: 100vh; /* Adjusted height for better responsiveness */
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.looping-title {
+    font-size: 3em; /* Adjusted font size for better readability */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 10s linear infinite;
+    color: #eee6e6;
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media only screen and (max-width: 768px) {
+    video {
+        height: 40vh; /* Adjusted height for smaller screens */
+        margin-top: 100px;
+    }
+
+    .looping-title {
+        font-size: 5px; /* Adjusted font size for smaller screens */
+    }
+}
+
+ 
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px;
+        position: relative;
+        
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 20px; /* Adjusted left position to start from the left edge */
+        background-color: white;
+        width: 100%;
+        font-size: 20px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-color: white;
+        padding: 10px;
+        width: 690px; 
+        display: block;
+        text-align: left; 
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-right: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    .menu-toggle span {
+        height: 2px;
+        width: 25px;
+        background-color: black;
+        margin: 3px 0;
+    }
+
+    .submenu-trigger a {
+        color: #0056b3;
+    }
+
+}
+
+
+/* 2 page style */
+
+
+
+ /* General styling for the secondpage container */
+.secondpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(249, 114, 65);
+   
+}
+
+.second {
+    flex: 1;
+}
+
+.second h1 {
+    color: #ffffff;
+    font-size: 90px; 
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.second p {
+     margin-top: 30px;
+     line-height: 1.4; 
+     color: #ffffff;
+     font-size: 24px;
+     word-spacing: normal;
+    
+}
+
+/* Styling for the right side image */
+.image {
+    flex-shrink: 0;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.image img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .secondpage {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .second,
+    .image {
+        margin: 0;
+        text-align: center;
+    }
+
+    .image img {
+        margin-top: 50px;
+        max-width: 360px;
+
+    }
+    .second h1{
+        font-size: 50px;  
+        margin-bottom: 20px;    
+    }
+    .second p {
+        font-size: 20px;
+        margin-top: 2px;
+        text-align: justify;
+        hyphens: auto;
+        }
+    
+}
+
+/* 3page */
+ .box-heading {
+    font-size: 1.5em;
+    color: #1C70B5;
+    text-align:justify;
+    margin: 50px 20px;
+
+}
+.thirdpage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+.box {
+    border: 1px solid #de3c0b;
+    padding: 10px;
+    width: 20%; 
+    text-align: center;
+    margin:10px; 
+    overflow: hidden;
+    
+    
+
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .thirdpage {
+        margin: 0 10px; /* Adjust the margin for smaller screens */
+    }
+    .box.large {
+        width: 100%; 
+    }
+  
+    .box.small {
+        width: 100%; 
+    }
+} 
+
+/* 4page */
+
+/* Center the mission heading */
+.section-heading {
+    text-align: center;
+    background-color: #1C70B5;
+    font-size: 50px;
+   
+    
+}
+.section-description{
+    margin:0 20px;
+    align-content: center;
+    margin-bottom:20px;
+    font-size: 20px;
+
+}
+
+/* Container for the four images */
+.image-box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 20px;
+}
+
+/* Style for each image box */
+.image-box {
+    width: 23%; /* Adjust the width as needed, considering margins and potential small spacing issues */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for the image within the image box */
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    pointer-events: none;
+}
+
+/* Style for heading and content below each image */
+.image-box .heading {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Style for the Learn More link */
+.learn-more-link {
+    color: #1C70B5; /* Set the link color */
+    text-decoration: none; /* Remove underline, you can customize this */
+    font-weight: bold; /* Make the text bold, adjust as needed */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.learn-more-link:hover {
+    color: #0056b3; /* Change the color on hover, adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .image-box {
+        width: 100%; 
+    }
+    .section-description{
+        font-size: 15px;
+    }
+   
+}
+
+/* footer page style */
+
+footer {
+    background-color: #373636;
+    color:#f6f3f2;
+    padding: 20px;
+    
+  }
+  .footer-logo h1{
+   font-size: 20px;
+  }
+
+.footer-logo h1 span.first-word {
+    color: #1C70B5; /* Set the color for the first word */
+    font-style: italic; /* Set additional styles for the first word */
+}
+
+/* Apply styles to the second word */
+.footer-logo h1 span.second-word {
+    color: #FF5733; /* Set the color for the second word */
+    font-weight: bold; /* Set additional styles for the second word */
+}
+.footer-logo h1 span.third-word {
+    color: #1C70B5; /* Set the color for the first word */
+    font-style: italic; /* Set additional styles for the first word */
+}
+
+/* Apply styles to the second word */
+.footer-logo h1 span.fourth-word {
+    color: #FF5733; /* Set the color for the second word */
+    font-weight: bold; /* Set additional styles for the second word */
+}
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo img {
+    height: 80px; /* Adjust the height as needed */
+    pointer-events: none;
+  }
+  
+  
+
+   .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submenu-trigger {
+    position: relative;
+    margin-top:5% ;
+  }
+
+
+.footer-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f0f0;
+    box-shadow: 0 0 10px rgba(232, 226, 226, 0.1);
+    z-index: 1;
+}
+.footer-submenu p{
+   color: black;
+}
+
+.submenu-trigger:hover .footer-submenu {
+    display: block;
+}
+  .footer-social {
+    text-align: center;
+    color: #eee6e6; /* Set the icon color to black */
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff; /* Set the icon color to black */
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .fa-facebook { color: #3b5998; }
+  .fa-twitter { color: #00acee; }
+  .fa-instagram { color: #bc2a8d; }
+  .fa-youtube { color: #c4302b; }
+  
+  .footer-scanner {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-scanner img {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .footer-scanner p {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+    
+  }
+
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom hr {
+    border: 1px solid #f3f1f0;
+    margin: 10px 0; 
+  }
+  
+    /* Media Query for mobile devices */
+    @media only screen and (max-width: 750px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links ul {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  
+    .footer-links li {
+      margin-bottom: 0;
+      margin-right: 15px;
+      margin-top: 6%;
+    }
+  }
+
+

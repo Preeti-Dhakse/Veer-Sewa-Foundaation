@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donate.css">
+    <script src="script.js" defer></script>
+    <title>veer seva food foundation</title> 
+    <link rel="stylesheet" href="donate.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="logo_type_imgg-removebg-preview.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" style="color:#1C70B5;">Donate Now</a></li>
+
+            </ul>
+    
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- DONTAE NOW -->
+<div class="container">
+        <!-- <p>Select gift frequency</p> -->
+        <p>Contribute to Veer Seva Food Foundation and make a meaningful impact. Your donation directly supports our cause, ensuring every penny goes towards helping those in need. Thank you for your generosity!</p>
+
+        <br>
+        <div class="time" onclick="selectFrequency(event)">
+            <span id="monthly">Monthly</span>
+            <span id="onetime">Onetime</span>
+        </div>
+        <br>
+        <p>Select Amount</p>
+        <div class="value">
+            <span class="money" onclick="selectAmount(this)"> ₹2500 meals 100 </span>
+            <span class="money" onclick="selectAmount(this)"> ₹5000 meals 200</span>
+            <span class="money" onclick="selectAmount(this)"> ₹7500 meals 300</span>
+            <span class="money" onclick="selectAmount(this)"> ₹10000 meals 400</span>
+            <!-- <span class="money" onclick="selectAmount(this)">OTHER</span> -->
+        </div>
+    
+        <div class="confirm">
+            <input type="checkbox" name="" id="">
+            <span>Yes, I'll generously add $0.30 each month to cover the transaction</span>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input">
+            <p>Name</p>
+            <input type="hidden" name="access_key" value="518f1e8f-0496-482a-9ed4-b7ac0c74a634">
+            <input type="text" name="Full_name" id="" placeholder="Enter your name">
+            <p>Email</p>
+            <input type="text" name="Email_id" placeholder="Enter your email">
+        </div>
+        <p>Give in honor to another person</p>
+        <button id="donateBtn" onclick="handleDonation()">Donate Now</button>
+     </form>
+        <br>
+        <br>
+        <p>By donating, you agree to our <span class="blue"><a href="term.html">terms of service</a></span> and <span class="blue"><a href="Privacy.html">privacy policy</a></span></p>
+    </div>
+      <script src="donate.js"></script>
+      <script src="server.js"></script>  
+    </body>
+    </html>

@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: #0c0c0c;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo img {
+    height: 80px; /* Adjust the height as needed */
+    pointer-events: none;
+  }
+  
+  /* .footer-links ul {
+     list-style: none;
+    padding: 0; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    
+  }
+   .footer-submenu {
+    display: none;
+    padding-left: 20px;
+  } 
+  
+  .footer-links li:hover .footer-submenu {
+    display: block;
+  }
+   */
+
+   .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submenu-trigger {
+    position: relative;
+    margin-top:5% ;
+  }
+
+
+.footer-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.submenu-trigger:hover .footer-submenu {
+    display: block;
+}
+  .footer-social {
+    text-align: center;
+    color: #000; /* Set the icon color to black */
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #000; /* Set the icon color to black */
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .fa-facebook { color: #3b5998; }
+  .fa-twitter { color: #00acee; }
+  .fa-instagram { color: #bc2a8d; }
+  .fa-youtube { color: #c4302b; }
+  
+  .footer-scanner {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-scanner img {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .footer-scanner p {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom hr {
+    border: 1px solid #040404;
+    margin: 10px 0; 
+  }
+  
+    /* Media Query for mobile devices */
+    @media only screen and (max-width: 750px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links ul {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  
+    .footer-links li {
+      margin-bottom: 0;
+      margin-right: 15px;
+      margin-top: 6%;
+    }
+  }
